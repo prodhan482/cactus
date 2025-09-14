@@ -215,7 +215,7 @@
         <div class="row justify-content-between align-items-center w-100">
 
             <div class="col-auto">
-                <a class="navbar-brand text-white d-flex align-items-center" href="index.html">
+                <a class="navbar-brand text-white d-flex align-items-center" href="/">
                     <img src="assets/images/logo.png" alt="Cactus Logo" height="70" class="me-2">
                     {{-- <span class="fw-bold">Cactus</span> --}}
                 </a>
@@ -243,16 +243,16 @@
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
                                 <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Home Layout 1</a>
+                                        <a href="/" class="dropdown-item item-anchor">Home Layout 1</a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Home Layout 2 </a>
+                                        <a href="/" class="dropdown-item item-anchor">Home Layout 2 </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Home Layout 3 </a>
+                                        <a href="/" class="dropdown-item item-anchor">Home Layout 3 </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Home Layout 4 </a>
+                                        <a href="/" class="dropdown-item item-anchor">Home Layout 4 </a>
                                     </li>
                                 </ul>
                             </li>
@@ -261,35 +261,35 @@
                                     aria-haspopup="true" aria-expanded="false">Shop</a>
                                 <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Shop Sidebar </a>
+                                        <a href="/" class="dropdown-item item-anchor">Shop Sidebar </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Shop Three Column
+                                        <a href="/" class="dropdown-item item-anchor">Shop Three Column
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Shop Three Column
+                                        <a href="/" class="dropdown-item item-anchor">Shop Three Column
                                             Wide </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Shop Four Column </a>
+                                        <a href="/" class="dropdown-item item-anchor">Shop Four Column </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Shop Four Column Wide
+                                        <a href="/" class="dropdown-item item-anchor">Shop Four Column Wide
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Shop Six Column </a>
+                                        <a href="/" class="dropdown-item item-anchor">Shop Six Column </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Shop Six Column Wide
+                                        <a href="/" class="dropdown-item item-anchor">Shop Six Column Wide
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Single Product </a>
+                                        <a href="/" class="dropdown-item item-anchor">Single Product </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Single Product V2
+                                        <a href="/" class="dropdown-item item-anchor">Single Product V2
                                         </a>
                                     </li>
                                 </ul>
@@ -299,28 +299,28 @@
                                     aria-haspopup="true" aria-expanded="false">Blog</a>
                                 <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownBlog">
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Blog Classic </a>
+                                        <a href="/" class="dropdown-item item-anchor">Blog Classic </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Blog Grid with
+                                        <a href="/" class="dropdown-item item-anchor">Blog Grid with
                                             Sidebar </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Blog Grid Four Column
+                                        <a href="/" class="dropdown-item item-anchor">Blog Grid Four Column
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Blog No Sidebar </a>
+                                        <a href="/" class="dropdown-item item-anchor">Blog No Sidebar </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Blog Right Sidebar
+                                        <a href="/" class="dropdown-item item-anchor">Blog Right Sidebar
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Single Post </a>
+                                        <a href="/" class="dropdown-item item-anchor">Single Post </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Single Post No
+                                        <a href="/" class="dropdown-item item-anchor">Single Post No
                                             Sidebar </a>
                                     </li>
                                 </ul>
@@ -330,34 +330,34 @@
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                                 <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">About </a>
+                                        <a href="/" class="dropdown-item item-anchor">About </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Cart </a>
+                                        <a href="/" class="dropdown-item item-anchor">Cart </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Checkout </a>
+                                        <a href="/" class="dropdown-item item-anchor">Checkout </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Coming Soon </a>
+                                        <a href="/" class="dropdown-item item-anchor">Coming Soon </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Contact </a>
+                                        <a href="/" class="dropdown-item item-anchor">Contact </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Error Page </a>
+                                        <a href="/" class="dropdown-item item-anchor">Error Page </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">FAQs </a>
+                                        <a href="/" class="dropdown-item item-anchor">FAQs </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">My Account </a>
+                                        <a href="/" class="dropdown-item item-anchor">My Account </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Order Tracking </a>
+                                        <a href="/" class="dropdown-item item-anchor">Order Tracking </a>
                                     </li>
                                     <li>
-                                        <a href="index.html" class="dropdown-item item-anchor">Wishlist </a>
+                                        <a href="/" class="dropdown-item item-anchor">Wishlist </a>
                                     </li>
                                 </ul>
                             </li>
@@ -375,12 +375,12 @@
             <div class="col-3 col-lg-auto">
                 <ul class="list-unstyled d-flex m-0">
                     <li class="d-none d-lg-block">
-                        <a href="index.html" class="text-uppercase mx-3">Wishlist <span
+                        <a href="/" class="text-uppercase mx-3">Wishlist <span
                                 class="wishlist-count">(0)</span>
                         </a>
                     </li>
                     <li class="d-none d-lg-block">
-                        <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
+                        <a href="/" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Cart <span
                                 class="cart-count">(0)</span>
                         </a>
