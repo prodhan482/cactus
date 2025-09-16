@@ -3,14 +3,36 @@
 
 <head>
     <title>Cactus</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="TemplatesJungle">
-    <meta name="keywords" content="ecommerce,fashion,store">
-    <meta name="description" content="Bootstrap 5 Fashion Store HTML CSS Template">
+
+    {{-- Title --}}
+    <title>Cactus | Premium Clothing Brand – Blazers, Panjabis, Shirts, Pants & Complete Suits</title>
+
+    {{-- Meta Description --}}
+    <meta name="description"
+        content="Discover CActus – a premium clothing brand crafting high-quality blazers, panjabis, shirts, pants, sherwanis, and complete suits. Shop stylish, comfortable, and custom-made outfits for every occasion.">
+
+    {{-- Meta Keywords --}}
+    <meta name="keywords"
+        content="Cactus, Clothing Brand, Blazers, Panjabis, Shirts, Pants, Sherwanis, Complete Suits, Premium Apparel, Custom-made Clothing, Fashion, Style">
+
+    {{-- Open Graph / Social Sharing (optional) --}}
+    <meta property="og:title"
+        content="Cactus | Premium Clothing Brand – Blazers, Panjabis, Shirts, Pants & Complete Suits">
+    <meta property="og:description"
+        content="Discover Cactus – a premium clothing brand crafting high-quality blazers, panjabis, shirts, pants, sherwanis, and complete suits. Shop stylish, comfortable, and custom-made outfits for every occasion.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ asset('assets/images/og-image.jpg') }}"> {{-- replace with your image --}}
+    <meta property="og:url" content="{{ url()->current() }}">
+
+    {{-- Twitter Card (optional) --}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Cactus | Premium Clothing Brand – Blazers, Panjabis, Shirts, Pants & Complete Suits">
+    <meta name="twitter:description"
+        content="Discover Cactus – a premium clothing brand crafting high-quality blazers, panjabis, shirts, pants, sherwanis, and complete suits. Shop stylish, comfortable, and custom-made outfits for every occasion.">
+    <meta name="twitter:image" content="{{ asset('assets/images/og-image.jpg') }}"> {{-- replace with your image --}}
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">

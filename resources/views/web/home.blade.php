@@ -14,9 +14,9 @@
 @include('web.pages.collection')
 @include('web.pages.bestsellers')
 @include('web.pages.video')
-@include('web.pages.testimonials')
+{{-- @include('web.pages.testimonials') --}}
 @include('web.pages.relatedproducts')
-@include('web.pages.blog')
+{{-- @include('web.pages.blog') --}}
 @include('web.pages.logobar')
 @include('web.pages.newsletter')
 @include('web.pages.instagram')
@@ -27,3 +27,8 @@
 
 @section('custom_js')
 @endsection
+
+
+
+
+

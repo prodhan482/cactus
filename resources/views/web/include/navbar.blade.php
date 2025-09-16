@@ -238,10 +238,9 @@
 
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" id="dropdownHome"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-                                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/" aria-haspopup="true" aria-expanded="false">Home</a>
+                                {{-- <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
                                     <li>
                                         <a href="/" class="dropdown-item item-anchor">Home Layout 1</a>
                                     </li>
@@ -254,12 +253,12 @@
                                     <li>
                                         <a href="/" class="dropdown-item item-anchor">Home Layout 4 </a>
                                     </li>
-                                </ul>
+                                </ul> --}}
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdownShop" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Shop</a>
-                                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
+                                    aria-haspopup="true" aria-expanded="false">Categories</a>
+                                {{-- <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
                                     <li>
                                         <a href="/" class="dropdown-item item-anchor">Shop Sidebar </a>
                                     </li>
@@ -292,12 +291,12 @@
                                         <a href="/" class="dropdown-item item-anchor">Single Product V2
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> --}}
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdownBlog" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownBlog">
+                                    aria-haspopup="true" aria-expanded="false">Popular Items</a>
+                                {{-- <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownBlog">
                                     <li>
                                         <a href="/" class="dropdown-item item-anchor">Blog Classic </a>
                                     </li>
@@ -323,9 +322,9 @@
                                         <a href="/" class="dropdown-item item-anchor">Single Post No
                                             Sidebar </a>
                                     </li>
-                                </ul>
+                                </ul> --}}
                             </li>
-                            <li class="nav-item dropdown">
+                            {{-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdownPages"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                                 <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
@@ -360,9 +359,9 @@
                                         <a href="/" class="dropdown-item item-anchor">Wishlist </a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="#">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact</a>
@@ -375,8 +374,7 @@
             <div class="col-3 col-lg-auto">
                 <ul class="list-unstyled d-flex m-0">
                     <li class="d-none d-lg-block">
-                        <a href="/" class="text-uppercase mx-3">Wishlist <span
-                                class="wishlist-count">(0)</span>
+                        <a href="/" class="text-uppercase mx-3">Wishlist <span class="wishlist-count">(0)</span>
                         </a>
                     </li>
                     <li class="d-none d-lg-block">

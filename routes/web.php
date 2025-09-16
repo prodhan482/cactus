@@ -1,10 +1,11 @@
 <?php
 
+use App\Http\Controllers\Web\SiteImageController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::middleware([
     'auth:sanctum',
@@ -15,3 +16,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+Route::get('/', [SiteImageController::class, 'index'])->name('home');
