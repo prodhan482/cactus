@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Web\HomePageController;
 use App\Http\Controllers\Web\SiteImageController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,15 @@ Route::middleware([
 });
 
 
-Route::get('/', [SiteImageController::class, 'index'])->name('home');
+// Blade View
+
+Route::get('/', [HomePageController::class, 'index'])->name('home');
+
+
+
+
+
+
+// Resources
+
+Route::resource('site-images', SiteImageController::class);

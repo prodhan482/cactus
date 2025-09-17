@@ -215,9 +215,23 @@
         <div class="row justify-content-between align-items-center w-100">
 
             <div class="col-auto">
-                <a class="navbar-brand text-white d-flex align-items-center" href="/">
+                {{-- <span class="fw-bold">Cactus</span> --}}
+                {{-- <a class="navbar-brand text-white d-flex align-items-center" href="/">
                     <img src="assets/images/logo.png" alt="Cactus Logo" height="70" class="me-2">
-                    {{-- <span class="fw-bold">Cactus</span> --}}
+                </a> --}}
+
+                <a class="navbar-brand text-white d-flex align-items-center" href="/">
+                    @php
+                        $logo = optional($grouped->get('logos'))->first();
+                    @endphp
+
+                    @if($logo)
+                        <img src="{{ asset('storage/' . $logo->image) }}" alt="{{ $logo->title ?? 'Logo' }}" height="70"
+                            class="me-2">
+                    @else
+                        {{-- fallback static logo if none in DB --}}
+                        <img src="{{ asset('assets/images/logo.png') }}" alt="Default Logo" height="70" class="me-2">
+                    @endif
                 </a>
 
             </div>
@@ -227,6 +241,7 @@
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
@@ -238,135 +253,36 @@
 
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/" aria-haspopup="true" aria-expanded="false">Home</a>
-                                {{-- <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Home Layout 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Home Layout 2 </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Home Layout 3 </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Home Layout 4 </a>
-                                    </li>
-                                </ul> --}}
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownShop" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Categories</a>
-                                {{-- <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Shop Sidebar </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Shop Three Column
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Shop Three Column
-                                            Wide </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Shop Four Column </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Shop Four Column Wide
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Shop Six Column </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Shop Six Column Wide
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Single Product </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Single Product V2
-                                        </a>
-                                    </li>
-                                </ul> --}}
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownBlog" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Popular Items</a>
-                                {{-- <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownBlog">
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Blog Classic </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Blog Grid with
-                                            Sidebar </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Blog Grid Four Column
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Blog No Sidebar </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Blog Right Sidebar
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Single Post </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Single Post No
-                                            Sidebar </a>
-                                    </li>
-                                </ul> --}}
-                            </li>
-                            {{-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownPages"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">About </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Cart </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Checkout </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Coming Soon </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Contact </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Error Page </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">FAQs </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">My Account </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Order Tracking </a>
-                                    </li>
-                                    <li>
-                                        <a href="/" class="dropdown-item item-anchor">Wishlist </a>
-                                    </li>
-                                </ul>
-                            </li> --}}
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
+                            @foreach($navMenus as $menu)
+                                @if($menu->is_active) {{-- Only show active menus --}}
+                                    @if($menu->children->where('is_active', true)->count())
+                                        {{-- Menu with dropdown --}}
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="{{ $menu->url ?? '#' }}"
+                                                id="dropdown{{ $loop->index }}" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                {{ $menu->title }}
+                                            </a>
+                                            <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdown{{ $loop->index }}">
+                                                @foreach($menu->children->where('is_active', true) as $child)
+                                                    <li>
+                                                        <a href="{{ $child->url ?? '#' }}"
+                                                            class="dropdown-item item-anchor">{{ $child->title }}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                    @else
+                                        {{-- Menu without dropdown --}}
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ $menu->url ?? '#' }}" aria-haspopup="true"
+                                                aria-expanded="false">{{ $menu->title }}</a>
+                                        </li>
+                                    @endif
+                                @endif
+                            @endforeach
                         </ul>
+
                     </div>
                 </div>
             </div>
